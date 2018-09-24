@@ -39,9 +39,15 @@ bootJar {
 apply plugin: 'io.spring.dependency-management'
 
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-web")
-    compile("org.springframework.boot:spring-boot-starter-actuator")
+    compile("org.springframework.boot:spring-boot-starter-web:2.0.5.RELEASE")
+    compile("org.springframework.boot:spring-boot-starter-actuator:2.0.5.RELEASE")
+    compile("org.springframework.boot:spring-boot-starter-security:2.0.5.RELEASE")
+    compile("org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:2.0.5.RELEASE")
+
+    compile("org.webjars:webjars-locator-core:0.35")
+    compile("org.webjars:bootstrap:4.1.3")
+    compile("org.webjars:jquery:3.3.1")
     
-    testCompile("junit:junit")
-    testCompile("org.springframework.boot:spring-boot-starter-test")
+    testCompile("junit:junit:4.12")
+    testCompile("org.springframework.boot:spring-boot-starter-test:2.0.5.RELEASE")
 }
